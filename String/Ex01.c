@@ -32,3 +32,31 @@ int contador (char string[]) //int pois ele vai retornar um valor
   }
     return i;
 }
+
+//STRCPY, copia a string
+
+#include <stdio.h>
+copiar (char str1[], char str2[]); //prototipo
+
+void main ()
+{
+  char string1[20], string2[20];
+
+    printf("Entre com o nome: ");
+    fflush(stdin); //nao incluir o enter
+    gets(string1);
+    copiar(string1, string2);
+    printf("Nome digitado: %s", string2);
+
+ }
+
+copiar (char str1[], char str2[])
+{
+  int i;
+    for(i=0; str1[i]!='\0'; i++)
+    {
+      str2[i] = str1[i];
+    }
+    str2[i] = '\0';
+}
+
