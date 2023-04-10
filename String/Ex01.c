@@ -60,3 +60,33 @@ copiar (char str1[], char str2[])
     str2[i] = '\0';
 }
 
+//STRCAT, CONCATENA
+
+#include <stdio.h>
+#include <string.h>
+void concatenar (char s1[], char s2[]);
+
+void main ()
+{
+  char str1[50], str2[50];
+
+    printf("Entre com o nome: ");
+    gets(str1);
+    printf("Entre com o sobrenome: ");
+    gets(str2);
+
+    concatenar(str1, str2);
+    printf("Seu nome e sobrenome: %s", str1);
+
+}
+
+void concatenar (char s1[], char s2[])
+{
+  int i, j, tamanho=strlen(s1);
+
+  for (i=0, j=tamanho; s2[i]!='\0'; i++, j++)
+  {
+    s1[j] = s2[i];
+  }
+  s1[j] = '\0';
+}
