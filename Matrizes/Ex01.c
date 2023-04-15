@@ -15,7 +15,6 @@ void main ()
     exibir(M);
     zerar (M);
     exibir (M);
-
 }
 
 void zerar (int matriz[L][C])
