@@ -67,7 +67,7 @@ void CalcularMediaStatus(TAluno vetor[], int tam) {
     int i;
 
     for (i = 0; i < tam; i++) {
-        vetor[i].media = (vetor[i].AV1 + vetor[i].AV2);
+        vetor[i].media = (vetor[i].AV1 + vetor[i].AV2)/2;
 
         if (vetor[i].media >= 6) {
             strcpy(vetor[i].status, "APROVADO");
