@@ -39,6 +39,7 @@ int copiarArquivo (char nomeArqDestino[], char nomeArqOrigem[])
 		}
 		fclose (arqO);
 		fclose (arqD);
+		return 1;
 	}
 	
 }
